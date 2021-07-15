@@ -24,8 +24,9 @@ function minioStorage(clientlist,doc){
                 console.log('bucket already exists')
             // here we upload the data in form of btyearray 
             //and the str parameters must in lowercase
-            result = minioClient.fPutObject( clientlist[i].username, clientlist[i].filename,
-                                       doc[i].file, -1, part_size=10 * 1024 * 1024)
+            var encoded = encodeURIComponent(uri);
+            result = minioClient.putObject( clientlist[i].username, clientlist[i].filename,
+                                       encoded,size=10 * 1024 * 1024,-1)
             console.log('File uploaded successfully.')
 }
 
