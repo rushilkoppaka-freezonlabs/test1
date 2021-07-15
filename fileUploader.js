@@ -17,9 +17,9 @@ function minioStorage(clientlist,doc){
     });
 
     for (let i=0;i<=10;i++){
-            found = minioClient.bucket_exists( clientlist[i].username)
+            found = minioClient.bucketExists( clientlist[i].username)
             if (found==False):
-                minioClient.make_bucket(clientlist[i].username)
+                minioClient.makeBucket(clientlist[i].username)
             else:
                 console.log('bucket already exists')
             // here we upload the data in form of btyearray 
