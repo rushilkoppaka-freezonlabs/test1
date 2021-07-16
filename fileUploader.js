@@ -33,3 +33,16 @@ function minioStorage(clientlist,doc){
 
 
 '''
+    
+    
+    
+    
+//     const clientlist=[{ username:''
+//               filename:''
+//               doc =
+//              }
+//              {
+//              username:''
+//              filename:''
+//              }
+// ]
